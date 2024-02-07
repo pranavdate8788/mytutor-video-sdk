@@ -36,7 +36,7 @@ function App() {
   }, [isMobile]);
 
   useEffect(() => {
-    let { participantName } = getParams();
+    const participantName = getParams()?.participantName;
     if (participantName) setParticipantName(decodeURI(participantName));
   }, []);
 

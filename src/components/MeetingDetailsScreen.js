@@ -18,7 +18,7 @@ export function MeetingDetailsScreen({
   const [isJoinMeetingClicked, setIsJoinMeetingClicked] = useState(true);
 
   useEffect(() => {
-    let { meetingId } = getParams();
+    const meetingId  = getParams()?.meetingId;
     if (meetingId) setMeetingId(decodeURI(meetingId));
   }, []);
 

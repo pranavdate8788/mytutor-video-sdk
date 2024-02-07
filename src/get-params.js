@@ -7,6 +7,6 @@ export default function getParams(){
         const [k,v]= a.split("=");
         params[k]=v
       }
-      return params
+      return params ?? {}
     }
 } 
